@@ -201,16 +201,6 @@ body {
   }
 }
 
-.icon-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;
-  color: #ffffff;
-  text-decoration: none;
-  padding-left: 28px;
-  position: relative;
-  transition: color 0.3s;
-}
+
 
 
