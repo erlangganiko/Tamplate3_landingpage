@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("assets/img/bg.png"); /* Optional: marble texture */
+  background-image: url("assets/img/bg7.jpg"); /* Optional: marble texture */
   background-size: cover;
   background-position: center;
   color: white;
@@ -114,7 +114,8 @@ body {
 }
 
 .button:hover {
-  color: black;
+  transform: scale(1.2);
+  border: 2px solid #ff007f;
 }
 
 .popup-content.horizontal {
@@ -156,5 +157,17 @@ body {
 @media screen and (max-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+  .poster .lineup {
+    font-size: 20px;
+  }
+  .ticket-box h3 {
+    font-size: 20px;
+  }
+  .ticket-box a {
+    font-size: 16px;
+  }
+  .popupBox {
+    font-size: 15px;
   }
 }
