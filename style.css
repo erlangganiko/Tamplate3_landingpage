@@ -3,8 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  background-image: url("img/bg.jpg"); /* Optional: marble texture */
+  background-image: url("assets/img/bg.png"); /* Optional: marble texture */
   background-size: cover;
   background-position: center;
   color: white;
@@ -74,7 +73,6 @@ body {
 }
 
 .ticket-box {
-  background: #111;
   margin-top: 60px;
   padding: 40px 20px;
   border-top: 5px solid white;
@@ -113,4 +111,22 @@ body {
   border-radius: 25px;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.button:hover {
+  color: black;
+}
+
+/* Laptop */
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
 }
