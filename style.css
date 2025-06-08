@@ -9,6 +9,7 @@ body {
   color: white;
   font-family: "Anton", sans-serif;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.1); /* Ubah angka untuk transparansi */
 }
 
 .torn-paper {
@@ -31,6 +32,7 @@ body {
 
 .poster {
   padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Ubah angka untuk transparansi */
 }
 
 .main-title {
