@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/img/bg2.jpg"); /* Optional: marble texture */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1); /* Ubah angka untuk transparansi */
+}
+
+.torn-paper {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.torn-paper svg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.content {
+  padding: 40px 20px;
+}
+
+.poster {
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Ubah angka untuk transparansi */
+}
+
+.main-title {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.brush {
+  color: white;
+  background: #ff007f;
+  display: inline-block;
+  padding: 0 20px;
+  transform: rotate(-2deg);
+  text-shadow: 2px 2px 0 black;
+}
+
+.lineup-title {
+  font-size: 2rem;
+  margin-top: 50px;
+  color: white;
+  background: #ff007f;
+  display: inline-block;
+  padding: 10px 30px;
+  transform: rotate(-1deg);
+  margin-bottom: 20px;
+}
+
+.lineup {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.lineup li span {
+  color: #ff007f;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.ticket-box {
+  margin-top: 60px;
+  padding: 40px 20px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  position: relative;
+}
+
+.ticket-box::before,
+.ticket-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #ff007f;
+}
+
+.ticket-box::before {
+  top: -5px;
+}
+
+.ticket-box::after {
+  bottom: -5px;
+}
+
+.ticket-box h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #ff007f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  border: 2px solid #ff007f;
+}
+
+.popup-content.horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 30px;
+  max-width: 100%;
+}
+
+/* Container yang membungkus semua icon-link */
+.popup-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Semua link bergaya icon */
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;              
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 28px;          
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Ikon sebagai background di sisi kiri */
+.icon-link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: no-repeat center / contain;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Icon background per platform */
+.icon-link.wa::before      { background-image: url('assets/icon/WhatsApp.png'); }
+.icon-link.email::before   { background-image: url('assets/icon/Email.png'); }
+.icon-link.ig::before      { background-image: url('assets/icon/64px\ Instagram.png'); }
+.icon-link.tiktok::before  { background-image: url('assets/icon/Tiktok.png'); }
+
+/* Hover effect */
+.icon-link:hover {
+  color: #ff007f;
+}
+
+.popup-icons a:hover {
+  color: #ff007f;
+}
+/* Laptop */
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .poster .lineup {
+    font-size: 20px;
+  }
+  .ticket-box h3 {
+    font-size: 20px;
+  }
+  .ticket-box a {
+    font-size: 16px;
+  }
+  .popupBox {
+    font-size: 15px;
+  }
+}
+
+
+
