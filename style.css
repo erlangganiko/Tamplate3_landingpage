@@ -162,10 +162,10 @@ body {
 }
 
 /* Icon background per platform */
-.icon-link.wa::before      { background-image: url('assets/icon/WhatsApp.png'); }
-.icon-link.email::before   { background-image: url('assets/icon/Email.png'); }
-.icon-link.ig::before      { background-image: url('assets/icon/64px\ Instagram.png'); }
-.icon-link.tiktok::before  { background-image: url('assets/icon/Tiktok.png'); }
+.icon-link.wa::before      { background-image: url('assets/img/icon/WhatsApp.png'); }
+.icon-link.email::before   { background-image: url('assets/img/icon/Email.png'); }
+.icon-link.ig::before      { background-image: url('assets/img/icon/64px\ Instagram.png'); }
+.icon-link.tiktok::before  { background-image: url('assets/img/icon/Tiktok.png'); }
 
 /* Hover effect */
 .icon-link:hover {
