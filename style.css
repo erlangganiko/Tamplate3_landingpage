@@ -141,10 +141,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 22px;              
+  font-size: 22px;
   color: #ffffff;
   text-decoration: none;
-  padding-left: 28px;          
+  padding-left: 28px;
   position: relative;
   transition: color 0.3s;
 }
@@ -162,10 +162,18 @@ body {
 }
 
 /* Icon background per platform */
-.icon-link.wa::before      { background-image: url('assets/img/icon/WhatsApp.png'); }
-.icon-link.email::before   { background-image: url('assets/img/icon/Email.png'); }
-.icon-link.ig::before      { background-image: url('assets/img/icon/64px\ Instagram.png'); }
-.icon-link.tiktok::before  { background-image: url('assets/img/icon/Tiktok.png'); }
+.icon-link.wa::before {
+  background-image: url("assets/img/icon/WhatsApp.png");
+}
+.icon-link.email::before {
+  background-image: url("assets/img/icon/Email.png");
+}
+.icon-link.ig::before {
+  background-image: url("assets/img/icon/64px\ Instagram.png");
+}
+.icon-link.tiktok::before {
+  background-image: url("assets/img/icon/Tiktok.png");
+}
 
 /* Hover effect */
 .icon-link:hover {
@@ -179,6 +187,15 @@ body {
 @media screen and (max-width: 1366px) {
   html {
     font-size: 75%;
+  }
+  .poster .lineup {
+    font-size: 20px;
+  }
+  .ticket-box h3 {
+    font-size: 20px;
+  }
+  .ticket-box a {
+    font-size: 16px;
   }
 }
 
@@ -200,6 +217,3 @@ body {
     font-size: 15px;
   }
 }
-
-
-
