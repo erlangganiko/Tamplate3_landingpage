@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       icon.classList.remove('hidden-transition');
       setTimeout(() => {
         icon.classList.add('visible'); 
-      }, index * 800); // Delay 100ms untuk setiap ikon berikutnya
+      }, index * 500); // Delay 100ms untuk setiap ikon berikutnya
     });
   }
 
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
           setTimeout(callback, 500); // Sesuaikan delay ini dengan durasi transisi CSS
         }
-      }, index * 900); // Delay 100ms untuk setiap ikon berikutnya
+      }, index * 0); // Delay 100ms untuk setiap ikon berikutnya
     });
   }
 
