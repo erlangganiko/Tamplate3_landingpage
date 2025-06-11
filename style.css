@@ -136,16 +136,15 @@ body {
   flex-wrap: wrap;
 }
 
-
 /* Semua link bergaya icon */
 .icon-link {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 22px;              
+  font-size: 22px;
   color: #ffffff;
   text-decoration: none;
-  padding-left: 28px;          
+  padding-left: 28px;
   position: relative;
   transition: color 0.3s;
   opacity: 0; /* Mulai dengan tidak terlihat */
@@ -181,10 +180,18 @@ body {
 }
 
 /* Icon background per platform */
-.icon-link.wa::before      { background-image: url('assets/icon/WhatsApp.png'); }
-.icon-link.email::before   { background-image: url('assets/icon/Email.png'); }
-.icon-link.ig::before      { background-image: url('assets/icon/64px\ Instagram.png'); }
-.icon-link.tiktok::before  { background-image: url('assets/icon/Tiktok.png'); }
+.icon-link.wa::before {
+  background-image: url("assets/icon/WhatsApp.png");
+}
+.icon-link.email::before {
+  background-image: url("assets/icon/Email.png");
+}
+.icon-link.ig::before {
+  background-image: url("assets/icon/64px\ Instagram.png");
+}
+.icon-link.tiktok::before {
+  background-image: url("assets/icon/Tiktok.png");
+}
 
 /* Hover effect */
 .icon-link:hover {
@@ -199,7 +206,7 @@ body {
   html {
     font-size: 75%;
   }
-   .poster .lineup {
+  .poster .lineup {
     font-size: 20px;
   }
   .ticket-box h3 {
@@ -207,6 +214,7 @@ body {
   }
   .ticket-box a {
     font-size: 16px;
+  }
 }
 
 /* Tablet */
@@ -227,6 +235,3 @@ body {
     font-size: 15px;
   }
 }
-
-
-
